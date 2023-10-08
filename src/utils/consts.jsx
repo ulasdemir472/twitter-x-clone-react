@@ -90,7 +90,9 @@ export const MenuItems = [
     },
   },
   {
-    path: "/profile",
+    path: (account) => {
+      return `/${account.username}`;
+    },
     title: "Profil",
     icons: {
       active: (

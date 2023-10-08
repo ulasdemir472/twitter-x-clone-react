@@ -3,13 +3,20 @@ import classNames from "classnames";
 import { MenuItems } from "~/utils/consts";
 import More from "./more";
 import New from "./new";
+import { useSelector } from "react-redux";
 
 const Menu = () => {
+  const account = useSelector((state) => state.auth.currentAccount);
+
   return (
     <nav className="mt-0.5 mb-1">
       {MenuItems.map((item, index) => {
         return (
-          <NavLink to={item.path} className="py-1 block group" key={index}>
+          <NavLink
+            to={typeof item.path == "function" ? item.path(account) : item.path}
+            className="py-1 block group"
+            key={index}
+          >
             {({ isActive }) => (
               <div
                 className={classNames(

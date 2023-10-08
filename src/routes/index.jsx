@@ -5,6 +5,8 @@ import Explore from "~/pages/explore";
 import Home from "~/pages/home";
 import NotFound from "~/pages/NotFound";
 import MainLayout from "~/layout/main";
+import Profile from "~/pages/profile";
+import Messages from "~/pages/messages";
 
 const routes = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const routes = createBrowserRouter([
       {
         path: "explore",
         element: <Explore />,
+      },
+      {
+        path: ":slug",
+        element: <Profile />,
+      },
+      {
+        path: "messages",
+        element: <Messages />,
       },
       {
         path: "*",

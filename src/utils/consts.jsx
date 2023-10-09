@@ -114,3 +114,37 @@ export const MenuItems = [
     },
   },
 ];
+
+export const topics = [
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "tag",
+      value: "Beşiktaş",
+    },
+  },
+  {
+    title: "Türkiye tarihinde gündemde",
+    topic: {
+      type: "query",
+      value: "Ben 10",
+    },
+    postCount: 21232,
+  },
+  {
+    title: "Eğlence - Trendde",
+    topic: {
+      type: "query",
+      value: "Spider Man 2",
+    },
+    postCount: 124725,
+  },
+  {
+    title: "Spor - Trendde",
+    topic: {
+      type: "query",
+      value: "Vincent Aboubakar",
+    },
+    postCount: 3132,
+  },
+];

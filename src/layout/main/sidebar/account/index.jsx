@@ -4,7 +4,7 @@ import More from "./more";
 
 const Account = () => {
   //const account = store?.getState().auth?.currentAccount;
-  const account = useSelector((state) => state.auth.currentAccount);
+  const account = useSelector((state) => state.auth.currentAccount); //rerender eder
 
   return (
     <Popover className="mt-auto relative">
@@ -29,7 +29,7 @@ const Account = () => {
         leaveTo="transform scale-95 opacity-0"
       >
         <Popover.Panel className="w-[300px] left-1/2 -translate-x-1/2 bg-black shadow-box rounded-xl overflow-hidden">
-          <More />
+          {({ close }) => <More close={close} />}
         </Popover.Panel>
       </Transition>
     </Popover>

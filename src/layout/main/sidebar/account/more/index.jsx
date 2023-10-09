@@ -1,12 +1,13 @@
 import classNames from "classnames";
-import store from "~/store";
 import { setCurrentAccount } from "~/store/auth/actions";
 import { useSelector } from "react-redux";
+import { PropTypes } from "prop-types";
 
-const More = () => {
-  const accounts = store?.getState().auth?.accounts;
+const More = ({ close }) => {
+  //const accounts = store?.getState().auth?.accounts;
+  const accounts = useSelector((state) => state.auth.accounts);
+
   //const currentAccount = store?.getState().auth?.currentAccount;
-
   const currentAccount = useSelector((state) => state.auth.currentAccount);
 
   return (
@@ -18,6 +19,7 @@ const More = () => {
             disabled={currentAccount.id === account.id}
             onClick={() => {
               setCurrentAccount(account);
+              close();
             }}
             className={classNames("py-3 px-4 flex w-full transition-colors", {
               "hover:bg-[#eff3f41a]": account.id !== currentAccount.id,
@@ -45,6 +47,10 @@ const More = () => {
       </div>
     </div>
   );
+};
+
+More.propTypes = {
+  close: PropTypes.func,
 };
 
 export default More;

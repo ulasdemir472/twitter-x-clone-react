@@ -21,7 +21,7 @@ const initialState = {
       username: "ulasbaba123",
       fullname: "ulasbaba",
       avatar:
-        "https://pbs.twimg.com/profile_images/1679463362734768128/7sd3p5Kd_400x400.jpg",
+        "https://pbs.twimg.com/profile_images/1556324376953356288/37VsOyWk_400x400.jpg",
     },
   ],
 };

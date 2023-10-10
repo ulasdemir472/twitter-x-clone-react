@@ -1,6 +1,7 @@
 import Search from "./search";
 import Premium from "./premium/index";
 import Topics from "./topics";
+import WhoToFollow from "./who-to-follow";
 
 const RightBar = () => {
   return (
@@ -8,6 +9,7 @@ const RightBar = () => {
       <Search />
       <Premium />
       <Topics />
+      <WhoToFollow />
     </aside>
   );
 };

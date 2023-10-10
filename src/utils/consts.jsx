@@ -147,4 +147,52 @@ export const topics = [
     },
     postCount: 3132,
   },
+  {
+    title: "Eğlence - Trendde",
+    topic: {
+      type: "query",
+      value: "Spider Man 2",
+    },
+    postCount: 124725,
+  },
+  {
+    title: "Spor - Trendde",
+    topic: {
+      type: "query",
+      value: "Vincent Aboubakar",
+    },
+    postCount: 3132,
+  },
+  {
+    title: "Eğlence - Trendde",
+    topic: {
+      type: "query",
+      value: "Spider Man 2",
+    },
+    postCount: 124725,
+  },
+  {
+    title: "Spor - Trendde",
+    topic: {
+      type: "query",
+      value: "Vincent Aboubakar",
+    },
+    postCount: 3132,
+  },
+  {
+    title: "Eğlence - Trendde",
+    topic: {
+      type: "query",
+      value: "Spider Man 2",
+    },
+    postCount: 124725,
+  },
+  {
+    title: "Spor - Trendde",
+    topic: {
+      type: "query",
+      value: "Vincent Aboubakar",
+    },
+    postCount: 3132,
+  },
 ];

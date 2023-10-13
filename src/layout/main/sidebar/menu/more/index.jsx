@@ -1,6 +1,7 @@
 import { Popover, Disclosure } from "@headlessui/react";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
+import { setModal } from "~/store/modal/actions";
 
 const More = () => {
   return (
@@ -146,12 +147,12 @@ const More = () => {
                 </Link>
               </Disclosure.Panel>
               <Disclosure.Panel>
-                <Link
-                  to="/"
-                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                <button
+                  onClick={() => setModal("appearance")}
+                  className="flex items-center px-4 h-11 w-full text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
                 >
                   Görünüm
-                </Link>
+                </button>
               </Disclosure.Panel>
               <Disclosure.Panel>
                 <Link

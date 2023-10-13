@@ -8,7 +8,7 @@ const Account = () => {
 
   return (
     <Popover className="mt-auto relative">
-      <Popover.Button className="my-3 p-3 rounded-full w-full hover:bg-[#eff3f41a] flex items-center text-left outline-none">
+      <Popover.Button className="my-3 p-3 rounded-full w-full hover:bg-[#eff3f41a] flex items-center text-left outline-none relative">
         <img
           src={account.avatar}
           className="w-10 h-10 rounded-full"
@@ -18,6 +18,19 @@ const Account = () => {
           <span className="font-bold ">{account.fullname}</span>
           <span className="text-gray-600">@{account.username}</span>
         </div>
+
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          width={18.75}
+          height={18.75}
+          className="absolute right-2.5"
+        >
+          <path
+            fill="currentColor"
+            d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+          ></path>
+        </svg>
       </Popover.Button>
       <Transition
         className="left-[50%] bottom-full absolute"

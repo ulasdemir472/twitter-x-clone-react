@@ -1,12 +1,43 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./sidebar";
 import RightBar from "./rightbar/index";
-import { useSelector } from "react-redux";
 import Modal from "~/modals";
+import { useEffect } from "react";
+import useModal from "~/store/modal/hooks";
+import { useAppearance } from "~/store/appearance/hooks";
 
 const MainLayout = () => {
-  const modal = useSelector((state) => state.modal.modal);
-  console.log(modal);
+  const modal = useModal();
+  const appearance = useAppearance();
+
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--background-primary",
+      appearance.backgroundColor.primary
+    );
+    document.documentElement.style.setProperty(
+      "--background-secondary",
+      appearance.backgroundColor.secondary
+    );
+    document.documentElement.style.setProperty(
+      "--background-third",
+      appearance.backgroundColor.third
+    );
+
+    document.documentElement.style.setProperty(
+      "--color-primary",
+      appearance.color.primary
+    );
+    document.documentElement.style.setProperty(
+      "--color-secondary",
+      appearance.color.secondary
+    );
+
+    document.documentElement.style.setProperty(
+      "--font-size",
+      appearance.fontSize + "px"
+    );
+  }, [appearance]);
 
   return (
     <div className="w-[1265px] mx-auto flex">

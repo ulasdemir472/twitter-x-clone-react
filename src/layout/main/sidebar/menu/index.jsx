@@ -20,7 +20,7 @@ const Menu = () => {
             {({ isActive }) => (
               <div
                 className={classNames(
-                  "p-3 rounded-full inline-flex text-[color:var(--color-base)] items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors",
+                  "p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors",
                   {
                     "font-bold": isActive,
                   }

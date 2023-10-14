@@ -6,43 +6,43 @@ const Footer = () => {
     <footer className="px-4 mb-4 flex flex-wrap gap-2">
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Hizmet Şartları
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Çerez Politikası
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Gizlilik Politikası
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Imprint
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Erişilebilirlik
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] hover:underline"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] hover:underline"
       >
         Reklam Bilgisi
       </Link>
       <Link
         to="/"
-        className="leading-4 text-[#71767b] text-[13px] flex items-center"
+        className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px] flex items-center"
       >
         <Popover className="relative">
           <Popover.Button className="hover:underline">
@@ -75,7 +75,7 @@ const Footer = () => {
         </svg>
       </Link>
 
-      <span className="leading-4 text-[#71767b] text-[13px]">
+      <span className="leading-4 text-[color:var(--color-baseSecondary)] text-[13px]">
         © 2023 X Corp. / ulasdev
       </span>
     </footer>

@@ -10,7 +10,7 @@ const Topic = ({ item }) => {
       className="py-3 px-4 hover:bg-white/[0.03] transition-colors relative"
     >
       <div className="text-[13px] text-[#77767b] leading-4">{item.title}</div>
-      <div className="font-bold leading-5 text-[15px] mt-0.5 text-[#e7e9ea]">
+      <div className="font-bold leading-5 text-[15px] mt-0.5">
         {item.topic.type === "tag" && "#"}
         {item.topic.value}
       </div>

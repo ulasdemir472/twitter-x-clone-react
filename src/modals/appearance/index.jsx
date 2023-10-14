@@ -7,7 +7,7 @@ const AppearanceModal = () => {
         Görünümü özelleştir
       </h3>
       <div className="p-8 pt-0">
-        <p className="text-center text-[#71767b] leading-5 text-[15px] mb-5">
+        <p className="text-center text-[color:var(--color-baseSecondary)] leading-5 text-[15px] mb-5">
           These settings affect all the X accounts on this browser.
         </p>
         <div className="mx-8 mb-4">
@@ -33,11 +33,11 @@ const AppearanceModal = () => {
                     ></path>
                   </svg>
                 </div>
-                <div className="ml-1 flex items-center text-[#71767b]">
+                <div className="ml-1 flex items-center text-[color:var(--color-baseSecondary)]">
                   @X · 31d
                 </div>
               </header>
-              <div className="text-[#e7e9ea] leading-5">
+              <div className="leading-5">
                 X in merkezinde, tipki bunun gibi gönderi denen kisa mesajlar
                 yatar. Gönderiler; fotoğraflar, videolar, bağlantilar, metinler,
                 etiketler ve

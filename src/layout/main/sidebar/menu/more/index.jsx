@@ -5,7 +5,7 @@ import { setModal } from "~/store/modal/actions";
 
 const More = () => {
   return (
-    <Popover className="relative text-[color:var(--color-base)]">
+    <Popover className="relative">
       <Popover.Button className="py-1 block group outline-none">
         <div className="p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors">
           <div className="w-[26.25px] h-[26.25px] relative">

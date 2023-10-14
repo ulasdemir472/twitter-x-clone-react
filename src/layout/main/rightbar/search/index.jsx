@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";
 
@@ -18,15 +17,13 @@ const Search = () => {
     >
       <label
         htmlFor=""
-        className="h-[43px] w-full bg-[#202327] rounded-full relative border border-transparent focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
+        className="h-[43px] w-full bg-[#202327] rounded-full relative border border-transparent group focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
       >
         <div className="h-full w-[56px] flex justify-center items-center absolute top-0 left-0 pointer-events-none">
           <svg
             viewBox="0 0 24 24"
             height={18.75}
-            className={classNames("min-w-[32px] text-[#71767b] absolute", {
-              "text-[#1d9bf0]": focus,
-            })}
+            className="min-w-[32px] text-[color:var(--color-baseSecondary)] group-focus-within:text-[--color-primary] absolute"
           >
             <path
               fill="currentColor"
@@ -40,7 +37,7 @@ const Search = () => {
           value={query}
           onFocus={() => setFocus(true)}
           onChange={(e) => setQuery(e.target.value)}
-          className="bg-transparent w-full h-full rounded-full outline-none pl-[56px] text-[15px] placeholder-[#71767b]"
+          className="bg-transparent w-full h-full rounded-full outline-none pl-[56px] text-[15px] placeholder-[color:var(--color-baseSecondary)]"
         />
         {query && (
           <button
@@ -60,7 +57,7 @@ const Search = () => {
         )}
         {focus && (
           <div className="absolute w-[350px] top-full -left-px translate-y-px bg-[color:var(--background-primary)] shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
-            <p className="p-3 pt-5 text-[#71767b] leading-5">
+            <p className="p-3 pt-5 text-[color:var(--color-baseSecondary)] leading-5">
               Kişileri, listeleri veya anahtar kelimeleri aramayı dene
             </p>
           </div>

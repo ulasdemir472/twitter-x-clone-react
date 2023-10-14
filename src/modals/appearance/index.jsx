@@ -40,10 +40,10 @@ const AppearanceModal = () => {
               <div className="text-[#e7e9ea] leading-5">
                 X in merkezinde, tipki bunun gibi gönderi denen kisa mesajlar
                 yatar. Gönderiler; fotoğraflar, videolar, bağlantilar, metinler,
-                etiketler ve{" "}
+                etiketler ve
                 <Link className="text-[#1d9bf0] hover:underline" to="/x">
                   @X
-                </Link>{" "}
+                </Link>
                 gibi bahsetmeler içerebilir.
               </div>
             </div>

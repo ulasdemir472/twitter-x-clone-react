@@ -5,7 +5,7 @@ import { setModal } from "~/store/modal/actions";
 
 const More = () => {
   return (
-    <Popover className="relative">
+    <Popover className="relative text-[color:var(--color-base)]">
       <Popover.Button className="py-1 block group outline-none">
         <div className="p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors">
           <div className="w-[26.25px] h-[26.25px] relative">
@@ -19,7 +19,7 @@ const More = () => {
           <div className="pr-4 text-xl">Daha Fazla</div>
         </div>
       </Popover.Button>
-      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl overflow-hidden">
+      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-[color:var(--background-primary)] shadow-box rounded-xl overflow-hidden">
         <button className="p-3 h-14 w-full inline-flex items-center gap-5 hover:bg-[#eff3f41a] transition-colors">
           <div className="w-[26.25px] h-[26.25px] relative">
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -52,7 +52,7 @@ const More = () => {
                 Is team pricing available?
                 <svg
                   className={classNames({
-                    "rotate-180 text-blue-500": open,
+                    "rotate-180 text-[color:var(--color-primary)]": open,
                   })}
                   viewBox="0 0 24 24"
                   height={18.75}
@@ -67,7 +67,7 @@ const More = () => {
               <Disclosure.Panel>
                 <Link
                   to="/"
-                  className="flex items-center px-4 h-11 gap-4 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 gap-4 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   <svg viewBox="0 0 24 24" width={18.75} height={18.75}>
                     <path
@@ -88,7 +88,7 @@ const More = () => {
                 Profesyonel Araçlar
                 <svg
                   className={classNames({
-                    "rotate-180 text-blue-500": open,
+                    "rotate-180 text-[color:var(--color-primary)]": open,
                   })}
                   viewBox="0 0 24 24"
                   height={18.75}
@@ -103,7 +103,7 @@ const More = () => {
               <Disclosure.Panel>
                 <Link
                   to="/"
-                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   Reklamlar
                 </Link>
@@ -118,7 +118,7 @@ const More = () => {
                 Ayarlar ve Destek
                 <svg
                   className={classNames({
-                    "rotate-180 text-blue-500": open,
+                    "rotate-180 text-[color:var(--color-primary)]": open,
                   })}
                   viewBox="0 0 24 24"
                   height={18.75}
@@ -133,7 +133,7 @@ const More = () => {
               <Disclosure.Panel>
                 <Link
                   to="/"
-                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   Ayarlar ve Gizlilik
                 </Link>
@@ -141,7 +141,7 @@ const More = () => {
               <Disclosure.Panel>
                 <Link
                   to="/"
-                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   Yardım Merkezi
                 </Link>
@@ -149,7 +149,7 @@ const More = () => {
               <Disclosure.Panel>
                 <button
                   onClick={() => setModal("appearance")}
-                  className="flex items-center px-4 h-11 w-full text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 w-full text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   Görünüm
                 </button>
@@ -157,7 +157,7 @@ const More = () => {
               <Disclosure.Panel>
                 <Link
                   to="/"
-                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors text-white"
+                  className="flex items-center px-4 h-11 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
                 >
                   Klavye Kısayolları
                 </Link>

@@ -14,11 +14,11 @@ const Search = () => {
   return (
     <div
       ref={ref}
-      className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 z-[3] bg-black"
+      className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 z-[3] bg-(color:var(--background-primary))"
     >
       <label
         htmlFor=""
-        className="h-[43px] w-full bg-[#202327] rounded-full relative border border-transparent focus-within:bg-black focus-within:border-[#1d9bf0]"
+        className="h-[43px] w-full bg-[#202327] rounded-full relative border border-transparent focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
       >
         <div className="h-full w-[56px] flex justify-center items-center absolute top-0 left-0 pointer-events-none">
           <svg
@@ -59,7 +59,7 @@ const Search = () => {
           </button>
         )}
         {focus && (
-          <div className="absolute w-[350px] top-full -left-px translate-y-px bg-black shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
+          <div className="absolute w-[350px] top-full -left-px translate-y-px bg-[color:var(--background-primary)] shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
             <p className="p-3 pt-5 text-[#71767b] leading-5">
               Kişileri, listeleri veya anahtar kelimeleri aramayı dene
             </p>

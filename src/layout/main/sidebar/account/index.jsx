@@ -41,7 +41,7 @@ const Account = () => {
         leaveFrom="transform scale-100 opacity-100"
         leaveTo="transform scale-95 opacity-0"
       >
-        <Popover.Panel className="w-[300px] left-1/2 -translate-x-1/2 bg-black shadow-box rounded-xl overflow-hidden">
+        <Popover.Panel className="w-[300px] left-1/2 -translate-x-1/2 bg-[color:var(--background-primary)] shadow-box rounded-xl overflow-hidden">
           {({ close }) => <More close={close} />}
         </Popover.Panel>
       </Transition>

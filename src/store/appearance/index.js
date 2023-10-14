@@ -11,7 +11,7 @@ const initialState = {
   color: {
     primary: "#1d9bf0",
     secondary: "#8ecdf8",
-    base: "#e7e9ea",
+    base: "red",
     baseSecondary: "#71767b",
   },
   boxShadow:
@@ -36,6 +36,7 @@ const initialState = {
 	fontSize: 16
 	 */
 
+  // BEYAZ
   // backgroundColor: {
   // 	primary: '#fff',
   // 	secondary: '#f7f9f9',

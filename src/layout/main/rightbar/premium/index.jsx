@@ -2,7 +2,7 @@ import Button from "~/components/button";
 
 const Premium = () => {
   return (
-    <section className="h-[145px] mb-4 px-4 py-3 bg-[#16181c] rounded-2xl  border border-[#16181c] flex flex-col gap-2.5">
+    <section className="h-[145px] mb-4 px-4 py-3 bg-[color:var(--background-secondary)] rounded-2xl  border border-[color:var(--background-secondary)] flex flex-col gap-2.5">
       <span className="text-[#e7e9ea] font-extrabold text-xl leading-6">
         Subscribe to Premium
       </span>

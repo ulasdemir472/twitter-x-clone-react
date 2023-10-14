@@ -20,15 +20,15 @@ const Menu = () => {
             {({ isActive }) => (
               <div
                 className={classNames(
-                  "p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors",
+                  "p-3 rounded-full inline-flex text-[color:var(--color-base)] items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors",
                   {
                     "font-bold": isActive,
                   }
                 )}
               >
                 <div className="w-[26.25px] h-[26.25px] relative">
-                  {item.notifications && (
-                    <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 bg-[#1d9bf0] rounded-full flex justify-center items-center text-[11px]">
+                  {item?.notifications && (
+                    <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 bg-[color:var(--color-primary)] rounded-full flex justify-center items-center text-[11px]">
                       {item?.notifications}
                     </span>
                   )}

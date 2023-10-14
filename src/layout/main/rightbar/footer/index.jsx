@@ -48,7 +48,7 @@ const Footer = () => {
           <Popover.Button className="hover:underline">
             Daha fazla
           </Popover.Button>
-          <Popover.Panel className="bottom-full right-0 rounded-xl w-[150px] max-w-[384px] bg-black shadow-box absolute grid z-[2] overflow-hidden">
+          <Popover.Panel className="bottom-full right-0 rounded-xl w-[150px] max-w-[384px] bg-[color:var(--background-primary)] shadow-box absolute grid z-[2] overflow-hidden">
             <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
               About
             </span>

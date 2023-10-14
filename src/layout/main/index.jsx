@@ -32,6 +32,10 @@ const MainLayout = () => {
       "--color-secondary",
       appearance.color.secondary
     );
+    document.documentElement.style.setProperty(
+      "--color-base",
+      appearance.color.base
+    );
 
     document.documentElement.style.setProperty(
       "--font-size",

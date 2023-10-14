@@ -28,7 +28,7 @@ const Topic = ({ item }) => {
             ></path>
           </svg>
         </Popover.Button>
-        <Popover.Panel className="bg-black shadow-box max-w-[24rem] w-[19rem] rounded-xl grid absolute top-0 overflow-hidden right-0 z-[2]">
+        <Popover.Panel className="bg-[color:var(--background-primary)] shadow-box max-w-[24rem] w-[19rem] rounded-xl grid absolute top-0 overflow-hidden right-0 z-[2]">
           <button className="text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold">
             <svg viewBox="0 0 24 24" className="h-[1.172rem]">
               <path

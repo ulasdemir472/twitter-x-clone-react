@@ -9,7 +9,7 @@ const UserCard = ({ user }) => {
   return (
     <Link
       to={`/${user.username}`}
-      className="px-4 py-3 flex justify-center items-center gap-2 hover:bg-white/[0.03]"
+      className="px-4 py-3 flex justify-center items-center gap-2 hover:bg-[--background-third]"
     >
       <div className="mr-2">
         <img

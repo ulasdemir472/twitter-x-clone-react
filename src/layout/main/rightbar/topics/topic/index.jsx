@@ -7,7 +7,7 @@ const Topic = ({ item }) => {
   return (
     <Link
       to="/"
-      className="py-3 px-4 hover:bg-white/[0.03] transition-colors relative"
+      className="py-3 px-4 hover:bg-[--background-third] transition-colors relative"
     >
       <div className="text-[13px] text-[color:var(--color-baseSecondary)] leading-4">
         {item.title}
@@ -22,7 +22,7 @@ const Topic = ({ item }) => {
         </div>
       )}
       <Popover className="top-3.5 right-4 absolute">
-        <Popover.Button className="text-[color:var(--color-baseSecondary)] outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:text-blue-500 hover:bg-white/[0.10] z-[1]">
+        <Popover.Button className="text-[color:var(--color-baseSecondary)] outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:text-[color:var(--color-primary)] hover:bg-[color:var(--background-secondary)] z-[1]">
           <svg viewBox="0 0 24 24" className="h-[1.172rem]">
             <path
               fill="currentColor"
@@ -31,7 +31,7 @@ const Topic = ({ item }) => {
           </svg>
         </Popover.Button>
         <Popover.Panel className="bg-[color:var(--background-primary)] shadow-box max-w-[24rem] w-[19rem] rounded-xl grid absolute top-0 overflow-hidden right-0 z-[2]">
-          <button className="text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold">
+          <button className="text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold hover:bg-[color:var(--background-secondary)]">
             <svg viewBox="0 0 24 24" className="h-[1.172rem]">
               <path
                 fill="currentColor"
@@ -40,7 +40,7 @@ const Topic = ({ item }) => {
             </svg>
             <span>Bununla ilgilenmiyorum</span>
           </button>
-          <button className="text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold">
+          <button className="text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold hover:bg-[color:var(--background-secondary)]">
             <svg viewBox="0 0 24 24" className="h-[1.172rem]">
               <path
                 fill="currentColor"

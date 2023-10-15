@@ -8,7 +8,7 @@ const Account = () => {
 
   return (
     <Popover className="mt-auto relative">
-      <Popover.Button className="my-3 p-3 rounded-full w-full hover:bg-[#eff3f41a] flex items-center text-left outline-none relative">
+      <Popover.Button className="my-3 p-3 rounded-full w-full hover:bg-[--background-third] flex items-center text-left outline-none relative">
         <img
           src={account.avatar}
           className="w-10 h-10 rounded-full"

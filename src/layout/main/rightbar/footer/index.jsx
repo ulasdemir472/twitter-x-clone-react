@@ -49,19 +49,19 @@ const Footer = () => {
             Daha fazla
           </Popover.Button>
           <Popover.Panel className="bottom-full right-0 rounded-xl w-[150px] max-w-[384px] bg-[color:var(--background-primary)] shadow-box absolute grid z-[2] overflow-hidden">
-            <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
+            <span className="px-4 py-3 text-[--color-base] font-bold text-[15px] leading-5 hover:bg-[--background-secondary]">
               About
             </span>
-            <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
+            <span className="px-4 py-3 text-[--color-base] font-bold text-[15px] leading-5 hover:bg-[--background-secondary]">
               Download the X App
             </span>
-            <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
+            <span className="px-4 py-3 text-[--color-base] font-bold text-[15px] leading-5 hover:bg-[--background-secondary]">
               Status
             </span>
-            <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
+            <span className="px-4 py-3 text-[--color-base] font-bold text-[15px] leading-5 hover:bg-[--background-secondary]">
               X for Business
             </span>
-            <span className="px-4 py-3 text-white font-bold text-[15px] leading-5 hover:bg-white/[0.07]">
+            <span className="px-4 py-3 text-[--color-base] font-bold text-[15px] leading-5 hover:bg-[--background-secondary]">
               Developers
             </span>
           </Popover.Panel>

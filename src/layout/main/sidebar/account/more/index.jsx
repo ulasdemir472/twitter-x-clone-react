@@ -22,7 +22,8 @@ const More = ({ close }) => {
               close();
             }}
             className={classNames("py-3 px-4 flex w-full transition-colors", {
-              "hover:bg-[#eff3f41a]": account.id !== currentAccount.id,
+              "hover:bg-[color:var(--background-secondary)]":
+                account.id !== currentAccount.id,
             })}
             key={index}
           >
@@ -40,11 +41,11 @@ const More = ({ close }) => {
           </button>
         );
       })}
-      <div className="h-[0.5px] w-full bg-[#2f3336] my-2" />
-      <div className="py-3 px-4 font-bold hover:bg-[#eff3f41a] w-full max-w-[220px]">
+      <div className="h-[0.5px] w-full bg-[color:var(--background-third)] my-2" />
+      <div className="py-3 px-4 font-bold hover:bg-[color:var(--background-secondary)] w-full">
         <button>Varolan bir hesap ekle</button>
       </div>
-      <div className="py-3 px-4 font-bold hover:bg-[#eff3f41a] w-full max-w-[220px]">
+      <div className="py-3 px-4 font-bold hover:bg-[color:var(--background-secondary)] w-full">
         <button>Çıkış yap</button>
       </div>
     </div>

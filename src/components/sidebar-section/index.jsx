@@ -12,7 +12,7 @@ const SidebarSection = ({ title, children, more }) => {
         {more && (
           <Link
             to={more}
-            className="h-[52px] flex items-center justify-start p-4 text-blue-500 hover:bg-white/[0.03] text-[15px]"
+            className="h-[52px] flex items-center justify-start p-4 text-[color:var(--color-primary)] hover:bg-[color:var(--background-third)] text-[15px]"
           >
             Daha fazla göster
           </Link>

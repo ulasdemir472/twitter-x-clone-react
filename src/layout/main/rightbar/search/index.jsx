@@ -13,17 +13,16 @@ const Search = () => {
   return (
     <div
       ref={ref}
-      className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 z-[3] bg-[color:var(--background-primary)]"
+      className="min-h-[2rem] h-[3.313rem] mb-3 flex items-center sticky top-0 z-[3] bg-[color:var(--background-primary)]"
     >
       <label
         htmlFor=""
-        className="h-[43px] w-full bg-[color:var(--background-third)] rounded-full relative border border-transparent group focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
+        className="h-[2.688rem] w-full bg-[color:var(--background-third)] rounded-full relative border border-transparent group focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
       >
-        <div className="h-full w-[56px] flex justify-center items-center absolute top-0 left-0 pointer-events-none">
+        <div className="h-full w-[3.5rem] flex justify-center items-center absolute top-0 left-0 pointer-events-none">
           <svg
             viewBox="0 0 24 24"
-            height={18.75}
-            className="min-w-[32px] text-[color:var(--color-baseSecondary)] group-focus-within:text-[--color-primary] absolute"
+            className="min-w-[2rem] h-[1.172rem] text-[color:var(--color-baseSecondary)] group-focus-within:text-[--color-primary]"
           >
             <path
               fill="currentColor"
@@ -37,7 +36,7 @@ const Search = () => {
           value={query}
           onFocus={() => setFocus(true)}
           onChange={(e) => setQuery(e.target.value)}
-          className="bg-transparent w-full h-full rounded-full outline-none pl-[56px] text-[15px] placeholder-[color:var(--color-baseSecondary)]"
+          className="bg-transparent w-full h-full rounded-full outline-none pl-[3.5rem] placeholder-[color:var(--color-baseSecondary)] text-[0.938rem]"
         />
         {query && (
           <button

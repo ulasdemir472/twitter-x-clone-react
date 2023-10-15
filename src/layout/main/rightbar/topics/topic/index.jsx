@@ -9,15 +9,15 @@ const Topic = ({ item }) => {
       to="/"
       className="py-3 px-4 hover:bg-[--background-third] transition-colors relative"
     >
-      <div className="text-[13px] text-[color:var(--color-baseSecondary)] leading-4">
+      <div className="text-[0.813rem] text-[color:var(--color-baseSecondary)] leading-4">
         {item.title}
       </div>
-      <div className="font-bold leading-5 text-[15px] mt-0.5">
+      <div className="font-bold leading-5 text-[0.938rem] mt-0.5">
         {item.topic.type === "tag" && "#"}
         {item.topic.value}
       </div>
       {item?.postCount && (
-        <div className="leading-4 text-[13px] mt-1 text-[color:var(--color-baseSecondary)]">
+        <div className="leading-4 text-[0.813rem] mt-1 text-[color:var(--color-baseSecondary)]">
           {numberFormat(item.postCount)} posts
         </div>
       )}

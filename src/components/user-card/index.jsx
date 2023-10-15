@@ -13,11 +13,9 @@ const UserCard = ({ user }) => {
     >
       <div className="mr-2">
         <img
-          height={40}
-          width={40}
           src={user.avatar}
           alt={user.fullname}
-          className="rounded-full object-cover"
+          className="rounded-full object-cover w-10 h-10"
         />
       </div>
       <div className="flex flex-1 justify-between items-center">

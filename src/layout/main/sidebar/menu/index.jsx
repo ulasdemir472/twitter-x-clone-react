@@ -20,7 +20,7 @@ const Menu = () => {
             {({ isActive }) => (
               <div
                 className={classNames(
-                  "p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[#eff3f41a] transition-colors",
+                  "p-3 rounded-full inline-flex items-center gap-5 group-hover:bg-[color:var(--background-third)] transition-colors",
                   {
                     "font-bold": isActive,
                   }
@@ -28,7 +28,7 @@ const Menu = () => {
               >
                 <div className="w-[26.25px] h-[26.25px] relative">
                   {item?.notifications && (
-                    <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 bg-[color:var(--color-primary)] rounded-full flex justify-center items-center text-[11px]">
+                    <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 bg-[color:var(--color-primary)] text-white rounded-full flex justify-center items-center text-[11px]">
                       {item?.notifications}
                     </span>
                   )}

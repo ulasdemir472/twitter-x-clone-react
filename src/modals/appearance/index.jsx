@@ -1,6 +1,16 @@
+import classNames from "classnames";
 import { Link } from "react-router-dom";
+import Button from "~/components/button";
+import {
+  setBackgroundColor,
+  setBoxShadow,
+  setColor,
+} from "~/store/appearance/actions";
+import { useAppearance } from "~/store/appearance/hooks";
 
-const AppearanceModal = () => {
+const AppearanceModal = ({ close }) => {
+  const { backgroundColor, color } = useAppearance();
+
   return (
     <div className="w-[600px]">
       <h3 className="mt-8 mb-3 leading-7 text-[23px] font-extrabold text-center">
@@ -11,7 +21,7 @@ const AppearanceModal = () => {
           These settings affect all the X accounts on this browser.
         </p>
         <div className="mx-8 mb-4">
-          <div className="border border-[#2f3336] py-3 px-4 gap-3 rounded-2xl flex">
+          <div className="border border-[color:var(--background-third)] py-3 px-4 gap-3 rounded-2xl flex">
             <img
               src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_bigger.jpg"
               alt="logo"
@@ -37,17 +47,114 @@ const AppearanceModal = () => {
                   @X · 31d
                 </div>
               </header>
-              <div className="leading-5">
+              <div className="leading-5 text-[15px] text-[color:var(--color-base)]">
                 X in merkezinde, tipki bunun gibi gönderi denen kisa mesajlar
                 yatar. Gönderiler; fotoğraflar, videolar, bağlantilar, metinler,
-                etiketler ve
-                <Link className="text-[#1d9bf0] hover:underline" to="/x">
+                etiketler ve{" "}
+                <Link
+                  className="text-[color:var(--color-primary)] hover:underline"
+                  to="/x"
+                >
                   @X
-                </Link>
+                </Link>{" "}
                 gibi bahsetmeler içerebilir.
               </div>
             </div>
           </div>
+        </div>
+
+        <h6 className="text-[color:var(--color-baseSecondary)] mb-1 leading-5 text-[13px] font-bold">
+          Arka Plan
+        </h6>
+        <div className="py-1 px-3 mb-3 gap-2 grid grid-cols-3 bg-[color:var(--background-secondary)] rounded-2xl">
+          <button
+            onClick={() => {
+              setBackgroundColor({
+                name: "light",
+                primary: "#fff",
+                secondary: "#f7f9f9",
+                third: "#eff3f4",
+                modal: "#00000066",
+              });
+              setColor({
+                ...color,
+                base: "#0f1419",
+                baseSecondary: "#536471",
+              });
+              setBoxShadow(
+                "rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px"
+              );
+            }}
+            className={classNames(
+              "h-16 px-5 bg-white text-[#0f1419] border border-white/10 font-bold rounded",
+              {
+                "!border-[color:var(--color-primary)]":
+                  backgroundColor.name === "light",
+              }
+            )}
+          >
+            Varsayılan
+          </button>
+          <button
+            onClick={() => {
+              setBackgroundColor({
+                name: "dark",
+                primary: "#15202b",
+                secondary: "#1e2732",
+                third: "#263340",
+                modal: "#5b708366",
+              });
+              setColor({
+                ...color,
+                base: "#f7f9f9",
+                baseSecondary: "#8b98a5",
+              });
+              setBoxShadow(
+                "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px"
+              );
+            }}
+            className={classNames(
+              "h-16 px-5 bg-[#15202b] text-[#f7f9f9] border border-white/10 font-bold rounded",
+              {
+                "!border-[color:var(--color-primary)]":
+                  backgroundColor.name === "dark",
+              }
+            )}
+          >
+            Loş
+          </button>
+          <button
+            onClick={() => {
+              setBackgroundColor({
+                name: "darker",
+                primary: "#000000",
+                secondary: "#16181c",
+                third: "#212327",
+                modal: "#5b708366",
+              });
+              setColor({
+                ...color,
+                base: "#e7e9ea",
+                baseSecondary: "#71767b",
+              });
+              setBoxShadow(
+                "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px"
+              );
+            }}
+            className={classNames(
+              "h-16 px-5 bg-black text-[#f7f9f9] border border-white/10 font-bold rounded",
+              {
+                "!border-[color:var(--color-primary)]":
+                  backgroundColor.name === "darker",
+              }
+            )}
+          >
+            Işıklar Kapalı
+          </button>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <Button onClick={close}>Bitti</Button>
         </div>
       </div>
     </div>

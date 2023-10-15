@@ -12,8 +12,7 @@ const initialState = {
     primary: "#1d9bf0",
     secondary: "#8ecdf8",
     base: "#e7e9ea",
-    //baseSecondary: "#71767b",
-    baseSecondary: "yellow",
+    baseSecondary: "#71767b",
   },
   boxShadow:
     "rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px",

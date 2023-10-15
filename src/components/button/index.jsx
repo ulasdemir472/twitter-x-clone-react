@@ -12,9 +12,12 @@ const Button = ({ as, size, variant, className, children, ...props }) => {
           "px-4 h-8 font-semibold text-sm": size === "small",
           "px-4 h-9 ": size === "normal",
           "px-4 h-[52px] w-full text-[17px]": size === "large",
-          "bg-[#1d9bf0]": variant === "primary",
-          "bg-white text-black": variant === "white",
-          "border border-[#b4b4b4]": variant === "outline-white",
+          "bg-[color:var(--color-primary)] hover:opacity-90 text-white":
+            variant === "primary",
+          "bg-[color:var(--color-base)] text-[color:var(--background-primary)]":
+            variant === "white",
+          "border border-[#b4b4b4] hover:border-[#67070f] hover:bg-[#f4212e1a] hover:text-[#f4212e]":
+            variant === "outline-white",
           [className]: true,
         }
       ),

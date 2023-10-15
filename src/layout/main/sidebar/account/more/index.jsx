@@ -33,7 +33,9 @@ const More = ({ close }) => {
             />
             <div className="flex flex-col justify-center items-start mx-3">
               <span className="font-bold ">{account.fullname}</span>
-              <span className="text-gray-600">@{account.username}</span>
+              <span className="text-[color:var(--color-baseSecondary)]">
+                @{account.username}
+              </span>
             </div>
           </button>
         );

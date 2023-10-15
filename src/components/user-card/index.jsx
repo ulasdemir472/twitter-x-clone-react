@@ -39,7 +39,9 @@ const UserCard = ({ user }) => {
               </svg>
             )}
           </span>
-          <span className="text-gray-600">@{user.username}</span>
+          <span className="text-[color:var(--color-baseSecondary)]">
+            @{user.username}
+          </span>
         </div>
         {following ? (
           <Button

@@ -13,11 +13,11 @@ const Search = () => {
   return (
     <div
       ref={ref}
-      className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 z-[3] bg-(color:var(--background-primary))"
+      className="min-h-[32px] h-[53px] mb-3 flex items-center sticky top-0 z-[3] bg-[color:var(--background-primary)]"
     >
       <label
         htmlFor=""
-        className="h-[43px] w-full bg-[#202327] rounded-full relative border border-transparent group focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
+        className="h-[43px] w-full bg-[color:var(--background-third)] rounded-full relative border border-transparent group focus-within:bg-[color:var(--background-primary)] focus-within:border-[#1d9bf0]"
       >
         <div className="h-full w-[56px] flex justify-center items-center absolute top-0 left-0 pointer-events-none">
           <svg

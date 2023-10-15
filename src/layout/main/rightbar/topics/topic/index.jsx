@@ -9,18 +9,20 @@ const Topic = ({ item }) => {
       to="/"
       className="py-3 px-4 hover:bg-white/[0.03] transition-colors relative"
     >
-      <div className="text-[13px] text-[#77767b] leading-4">{item.title}</div>
+      <div className="text-[13px] text-[color:var(--color-baseSecondary)] leading-4">
+        {item.title}
+      </div>
       <div className="font-bold leading-5 text-[15px] mt-0.5">
         {item.topic.type === "tag" && "#"}
         {item.topic.value}
       </div>
       {item?.postCount && (
-        <div className="leading-4 text-[13px] mt-1 text-[#77767b]">
+        <div className="leading-4 text-[13px] mt-1 text-[color:var(--color-baseSecondary)]">
           {numberFormat(item.postCount)} posts
         </div>
       )}
       <Popover className="top-3.5 right-4 absolute">
-        <Popover.Button className="text-[#77767b] outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:text-blue-500 hover:bg-white/[0.10] z-[1]">
+        <Popover.Button className="text-[color:var(--color-baseSecondary)] outline-none w-[34.75px] h-[34.75px] rounded-full flex items-center justify-center hover:text-blue-500 hover:bg-white/[0.10] z-[1]">
           <svg viewBox="0 0 24 24" className="h-[1.172rem]">
             <path
               fill="currentColor"

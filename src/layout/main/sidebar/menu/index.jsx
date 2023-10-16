@@ -14,7 +14,7 @@ const Menu = () => {
         return (
           <NavLink
             to={typeof item.path == "function" ? item.path(account) : item.path}
-            className="py-1 block group"
+            className="py-[0.188rem] block group"
             key={index}
           >
             {({ isActive }) => (
@@ -26,9 +26,9 @@ const Menu = () => {
                   }
                 )}
               >
-                <div className="w-[26.25px] h-[26.25px] relative">
+                <div className="w-[1.641rem] h-[1.641rem] relative">
                   {item?.notifications && (
-                    <span className="w-[18px] h-[18px] absolute -top-1.5 -right-1 bg-[color:var(--color-primary)] text-white rounded-full flex justify-center items-center text-[11px]">
+                    <span className="w-[1.125rem] h-[1.125rem] absolute -top-1.5 -right-1 bg-[color:var(--color-primary)] text-white rounded-full flex justify-center items-center text-[0.688rem]">
                       {item?.notifications}
                     </span>
                   )}

@@ -20,7 +20,7 @@ const UserCard = ({ user }) => {
       </div>
       <div className="flex flex-1 justify-between items-center">
         <div className="flex flex-col items-start justify-center">
-          <span className="font-bold flex items-center">
+          <span className="font-bold flex items-center leading-5 truncate">
             {user.fullname}
             {user?.verified && (
               <svg
@@ -28,7 +28,7 @@ const UserCard = ({ user }) => {
                 role="img"
                 width={18.75}
                 height={18.75}
-                className=" text-blue-500 ml-0.5"
+                className=" text-[color:var(--color-primary)] ml-0.5"
               >
                 <path
                   fill="currentColor"

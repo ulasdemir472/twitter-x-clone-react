@@ -11,7 +11,7 @@ const Button = ({ as, size, variant, className, children, ...props }) => {
         {
           "px-4 h-8 font-semibold text-sm": size === "small",
           "px-4 h-9 ": size === "normal",
-          "px-4 text-[1.063rem] h-[3.25rem]": size === "large",
+          "px-4 text-[1.063rem] h-[3.25rem] w-full": size === "large",
           "bg-[color:var(--color-primary)] hover:opacity-90 text-white":
             variant === "primary",
           "bg-[color:var(--color-base)] text-[color:var(--background-primary)]":

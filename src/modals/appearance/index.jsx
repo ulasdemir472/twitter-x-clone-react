@@ -10,6 +10,7 @@ import {
 import { useAppearance } from "~/store/appearance/hooks";
 import { colors, fontSizes } from "~/utils/consts";
 import { useEffect, useState } from "react";
+import { PropTypes } from "prop-types";
 
 const AppearanceModal = ({ close }) => {
   const { backgroundColor, color, fontSize } = useAppearance();
@@ -163,7 +164,7 @@ const AppearanceModal = ({ close }) => {
                 onClick={() => {
                   setBackgroundColor({
                     name: "light",
-                    primary: "#fff",
+                    primary: "#ffffff",
                     secondary: "#f7f9f9",
                     third: "#eff3f4",
                     modal: "#00000066",
@@ -313,6 +314,10 @@ const AppearanceModal = ({ close }) => {
       </div>
     </div>
   );
+};
+
+AppearanceModal.propTypes = {
+  close: PropTypes.bool,
 };
 
 export default AppearanceModal;

@@ -16,6 +16,10 @@ const MainLayout = () => {
       appearance.backgroundColor.primary
     );
     document.documentElement.style.setProperty(
+      "--background-primaryAlpha",
+      appearance.backgroundColor.primary + "a6"
+    );
+    document.documentElement.style.setProperty(
       "--background-secondary",
       appearance.backgroundColor.secondary
     );

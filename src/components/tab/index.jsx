@@ -21,7 +21,7 @@ const Tab = ({ children, activeTab }) => {
 
   return (
     <TabContext.Provider value={data}>
-      <div className="border-b border-[color:var(--background-third)] sticky top-[3.313rem] bg-[color:var(--background-primaryAlpha)] z-9 backdrop-blur-md">
+      <div className="border-b border-[color:var(--background-third)] sticky top-[3.313rem] bg-[color:var(--background-primaryAlpha)] z-30 backdrop-blur-md">
         {items}
       </div>
       {content}
